@@ -1,0 +1,263 @@
+ body {
+    margin: 0;
+    background-image: url('../images/lines.jpg');
+    /*background-size: cover;
+    //background-repeat: no-repeat;*/
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+      } 
+
+      
+ header {
+   background-color: white;
+   min-height: 70px;
+   border-bottom: 2px solid #9fedd7;
+ }
+
+ header a {
+    float:left;
+    color:black;
+    text-decoration: none;
+    font-size: 26px;
+    padding: 20px;
+ }
+
+ header a.active {
+    background-color: #9fedd7;
+ }
+
+ header a:hover {
+    background-color: #9fedd765;
+ }
+
+footer{
+min-height: 70px;
+background-color: white;
+border-top: 2px solid #9fedd7;
+width: 100%;
+}
+
+h1
+h2
+h3
+h4
+h5
+h6{
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   text-shadow: 5px 3px 20px gray;
+}
+
+img {
+   max-width: 100%;
+}
+
+p{
+   line-height: 150%;
+}
+
+hr {
+   border-top: 3px solid #026670;
+}
+
+.container {
+min-height: 45vh;
+padding:5px 15% 20px 15% ;
+}
+
+.header-logo {
+float:left;
+height: 60px;
+margin: 6px 20px 10px 45px;
+}
+
+.header-logo {
+   float: left;
+   height: 60px;
+    margin: 5px 20px 20px 40px;
+}
+.centered {
+   text-align: center;
+}
+.footer-info {
+   margin-top:12px;
+   font-size:24px;
+}
+
+.img-start {
+   max-height: 500px;
+   border: 4px solid #026670;
+   box-shadow: 6px 6px 8px gray;
+}
+
+.container-limbaje {
+   display:flex;
+   justify-content: space-around;
+   flex-wrap: wrap;
+}
+
+.img-limbaj {
+   margin-top: 5px;
+   max-height: 160px;
+   transition: all linear 1s;
+}
+
+.img-limbaj:hover{
+   transform: scale(1.1);
+   transition: all linear 1.5s;
+}
+
+.col-1 {width: 10%;}
+.col-2 {width: 20%;}
+.col-3 {width: 30%;}
+.col-4 {width: 50%;}
+.col-5 {width: 50%;}
+.col-6 {width: 50%;}
+.col-7 {width: 70%;}
+.col-8 {width: 80%;}
+.col-9 {width: 90%;}
+.col-10 {width: 100%;}
+
+[class*="col-"] {
+   float: left;
+}
+
+.row {
+   overflow: hidden;
+}
+
+.input-box {
+   width: 50%;
+   height: 20px;
+}
+
+.input-submit {
+   font-size: 18px;
+   background-color: #9fedd7;
+   padding: 5px;
+   border: 2px solid gray;
+}
+
+
+.contact-form {
+   background-color:#9fedd7;
+   padding: 10px;
+   border: 2px solid gray;
+}
+
+.container-contacte {
+   background-color:#9fedd7;
+   padding: 10px;
+   border: 2px solid gray;
+}
+
+.hamburger-menu{
+   display: none;
+   float:right;
+}
+
+.container-iframe {
+ margin: auto;
+ padding:0 10px;
+}
+
+.img-despre {
+   max-height: 300px;
+   border: 4px solid #026670;
+   box-shadow: 5px 5% 20px 5%;
+   margin: 15px;
+}
+
+table, th, td {
+   border: 2px solid #9fedd7;
+}
+
+tr {
+   background-color: white;
+}
+
+table {
+   width: 100%;
+}
+
+tr:nth-child(2n) {
+   background-color: lightgray;
+}
+
+.table-date {
+   overflow-x:scroll ;
+}
+
+th, td {
+    min-width: 100px;
+}
+
+.slideshow-container{
+   height: 470px;
+   display:flex;
+   justify-content: center;
+}
+
+.slide{
+    display: none;
+    position: relative;
+}
+
+.slide img {
+   max-width: 100%;
+   max-height: 450px;
+   border: 3px solid #026670;
+   box-shadow: 6px 6px 10px black;
+}
+
+.numar-slide {
+   position: absolute;
+   left: 10px;
+   top:10px;
+   background-color: rgba(248, 246, 246, 0.712);
+   padding: 5px;
+   border-radius: 10px;
+   font-weight: bold;
+}
+
+#motiv {
+   height:22px;
+   width:177px;
+}
+
+/*SUNT MEREU LA URMA*/
+@media (max-width: 770px) {
+
+    .container {
+      padding:5px 15% 20px 15% ;
+    }
+
+    [class*="col-"] {
+    width: 100%;
+    }
+
+   .nav a{
+      display: none;
+   }
+   
+   a.hamburger-menu {
+      display: block;
+      position:absolute;
+      right: 0;
+      top: 0;
+   }
+
+   .nav.mobile a {
+      float: none;
+      display: block;
+      text-align: left;
+   }
+
+   .slideshow-container{
+      height: 270px;
+   }
+
+   .slide img {
+      max-height: 250px;
+   }
+   
+}
